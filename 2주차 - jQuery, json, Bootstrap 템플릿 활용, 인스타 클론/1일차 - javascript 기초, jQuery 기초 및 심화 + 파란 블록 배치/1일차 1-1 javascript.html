@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
+
+
+</head>
+<body>
+   <div id="one" style="background-color: blue;">안녕하세요.</div>
+
+   <script>
+
+    document.getElementById('one').innerHTML = "개발부트캠프";
+    document.getElementById('one').style.backgroundColor="red";
+/* - document는 HTML문서를 말한다.
+   - getElementById('one')은 아이디가 'one'인 HTML 요소를 갖고 오라는 뜻
+   - innerHTML="~~~"은 갖고 온 요소의 내용('안녕하세요')을 '개발부트캠프'라는 내용으로 변경하라는 뜻
+   <script>는 <head>에 있어도 되고 <body>에 있어도 되는데 document.get~가 적용할 div보다 위에 위치해선 안 된다.
+   컴퓨터는 위에서부터 차례로 읽어 내려오기 때문 */
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Explore | minstagram</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="insta clone css" href="4일차 6 insta clone-css.css">
+    <!-- 기존의 insta clone 폴더 내 스타일 시트를 다 가져오는 것은 무리라
+    일단 강의에서 다루신 "explore.css"를 일부 수정한 "4일차 6 insta clone-css.css"에 link했습니다.
+    그래서 실행 결과물은 엉성한데 태그 코드들을 분석하여 주석으로 단 것에 중점을 두고 봐주시면 감사하겠습니다. -->
+</head>
+<body>
+    <nav class="navigation">
+        <div class="navigation__column">
+            <a href="feed.html">
+                <img src="images/logo.png" />
+            </a>
+        </div>
+        <div class="navigation__column">
+                <i class="fa fa-search"></i>
+                <!-- 구글에 fa icon을 검색하면
+                https://fontawesome.com/icons라는 사이트가 나온다.
+                여기서 돋보기 모양 아이콘 코드 가져올 수 있다. -->
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="navigation__column">
+            <ul class="navigations__links">
+                <li class="navigation__list-item">
+                    <a href="explore.html" class="navigation__link">
+                        <i class="fa fa-compass fa-lg"></i>
+              <!-- 위와 같은 사이트에서 나침반 아이콘 코드도 가져올 수 있다. -->
+                    </a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="#" class="navigation__link">
+                        <i class="fa fa-heart-o fa-lg"></i>
+                    </a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="profile.html" class="navigation__link">
+                        <i class="fa fa-user-o fa-lg"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="explore">
+        <ul class="explore__users">
+            <li class="explore__user">
+
+                <div class="explore__user-column">
+                    <img src="images/avatar.jpg" class="explore__avatar"/>
+                    <div class="explore__info">
+                        <span class="explore__username">braveming12</span>
+                        <span class="explore__full-name">Kim minkeong</span>
+                    </div>
+                </div>
+                <div class="explore__user-column">
+                    <button>Follow</button>
+                </div>
+            </li>
+            <li class="explore__user">
+
+                    <div class="explore__user-column">
+                        <img src="images/avatar.jpg" class="explore__avatar"/>
+                        <div class="explore__info">
+                            <span class="explore__username">braveming12</span>
+                            <span class="explore__full-name">Kim minkeong</span>
+                        </div>
+                    </div>
+                    <div class="explore__user-column">
+                        <button>Follow</button>
+                    </div>
+                </li>
+                <li class="explore__user">
+
+                        <div class="explore__user-column">
+                            <img src="images/avatar.jpg" class="explore__avatar"/>
+                            <div class="explore__info">
+                                <span class="explore__username">braveming12</span>
+                                <span class="explore__full-name">Kim minkeong</span>
+                            </div>
+                        </div>
+                        <div class="explore__user-column">
+                            <button>Follow</button>
+                        </div>
+                    </li>
+        </ul>
+    </main>
+    <footer class="footer">
+            <div class="footer__column">
+                <nav class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a href="#" class="footer__link">About Us</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Support</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Blog</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Press</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Api</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Jobs</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Privacy</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Terms</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Directory</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Language</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__column">
+                <span class="footer__copyright">© 2023 minstagram</span>
+            </div>
+        </footer>
+        <!-- <footer> 태그는 문서나 특정 섹션(section)의 푸터(footer)를 정의할 때 사용한다.
+
+푸터(footer)는 보통 <footer> 요소가 포함되어 있는 문서나 섹션에 대한 아래와 같은 정보를 포함힌다.
+- 저자(author) 정보
+- 저작권 정보
+- 연락처
+- 사이트맵(sitemap)
+- 페이지 맨 위로 되돌아갈 수 있는 Top 버튼
+- 연관 페이지 등
+
+하나의 HTML 문서에는 여러 개의 <footer> 요소가 포함될 수 있다. -->
+</body>
+</html>

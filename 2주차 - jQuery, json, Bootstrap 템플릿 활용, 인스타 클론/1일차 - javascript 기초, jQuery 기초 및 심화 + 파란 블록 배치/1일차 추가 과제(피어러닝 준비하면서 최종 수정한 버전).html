@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+  <style>
+
+    .Box {
+      box-sizing: border-box;
+      width: 100px;
+      height: 100px;
+      background-color: #489CFF;
+    }
+
+     section {
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+	  margin:auto;
+    }
+    /* align-items 속성은 Flexbox 컨테이너 내의 아이템들을 수직 방향으로 정렬하는 방법을 지정.
+       center 값은 아이템들을 수직 방향으로 가운데 정렬. */
+
+    /* flex-direction 속성은 Flexbox 아이템들의 배치 방향을 설정.
+	   column 값은 아이템들을 수직(column) 방향으로 배치.
+       즉, Flexbox 컨테이너는 세로로 쌓이는 컬럼 형태. */
+
+    /* margin: auto는 브라우저가 요소의 마진을 자동으로 계산하여 요소를 수평으로 가운데 정렬 */
+
+
+    section > header,
+    section > footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+      /* width: 100%은 header와 footer 요소들이 부모 요소인 section의 가로 폭을 100% 차지. */
+
+      /* display: flex는 부모 요소에 적용되며, 해당 요소의 자식 요소들을
+      유연한(flexible) 박스 모델로 배치하도록 지정 */
+
+      /* justify-content는 부모 요소 내 자식 요소들을 수평 방향으로 정렬하는 방법을 지정.
+        space-between 값은 자식 요소들 사이에 균등한 간격을 만들어주는 속성. */
+
+
+    .center {
+      margin: 100px
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <section>
+    <header>
+      <div class="Box top-left"></div>
+      <div class="Box top-right"></div>
+    </header>
+
+    <div class="Box center"></div>
+
+    <footer>
+      <div class="Box bottom-left"></div>
+      <div class="Box bottom-right"></div>
+    </footer>
+  </section>
+</body>
+
+</html>

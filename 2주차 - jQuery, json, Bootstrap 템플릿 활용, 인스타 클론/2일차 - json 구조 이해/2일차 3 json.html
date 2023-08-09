@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Json 예제 실습</title>
+   <script  src="https://code.jquery.com/jquery-latest.js"></script>
+
+   <script>
+     $(document).ready(()=>{
+
+
+      let min = ["김민경", 59, 178, 70, "min@naver.com", "A" ];
+
+      let minJson = {
+       name : "최민용",
+       age : 59,
+       height : 178,
+       weight : 70,
+       email : "min@naver.com",
+       type : "A"
+     };
+
+     let userList = [
+      {name:"김장미",age:59,type:"B"},
+      {name:"이안용",age:20,type:"A"},
+      {name:"황지수",age:18,type:"O"},
+      {name:"차민영",age:37,type:"A"},
+      {name:"강지환",age:24,type:"AB"},
+      {name:"유재린",age:48,type:"O"}
+    ];
+
+    for(i=0;i<6;i++){
+      $("#userList").append("<div>"+userList[i]["type"]+"</div>");
+    }
+      });
+
+
+   </script>
+
+  </head>
+  <body>
+    <div id="userList">
+
+    </div>
+
+
+  </body>
+<html>

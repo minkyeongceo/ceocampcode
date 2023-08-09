@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+  <style>
+    .Box {
+      box-sizing: border-box;
+      width: 100px;
+      height: 100px;
+      background-color: #489CFF;
+      border: 1px solid #489CFF;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    footer {
+      float:left;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    footer .Box:first-child {
+      margin-right: 0;
+    }
+
+    footer .Box:last-child {
+      margin-left: 0;
+    }
+
+    .center {
+      margin: 100px
+    }
+
+    section {
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+			margin:auto;
+    }
+
+    section > header,
+    section > footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <header>
+      <div class="Box top-left"></div>
+      <div class="Box top-right"></div>
+    </header>
+
+    <div class="Box center"></div>
+
+    <footer>
+      <div class="Box bottom-left"></div>
+      <div class="Box bottom-right"></div>
+    </footer>
+  </section>
+</body>
+
+</html>
